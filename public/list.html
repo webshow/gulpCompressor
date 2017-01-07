@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>静态资源打包压缩工具</title>
+	<link href="css/css.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<div class="nav">
+		<a href="/">上传</a>
+		<a href="/about.html">工具说明</a>
+		<a href="/list.html">已压缩资源</a>
+	</div>
+	<h1>已压缩资源列表</h1>
+	<div id="fileList">暂无</div>
+	<script type="text/template" id="fileItem">
+		<%for(var i=0;i<model.length;i++){%>
+		<%var item=model[i];%>
+		<p>
+			<span><%=item.name%></span>
+			<a href="/download?name=<%=item.name%>">下载</a>
+			<a href="/remove?name=<%=item.name%>">删除</a>
+		</p>
+		<%}%>
+	</script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/emcty.min.js"></script>
+	<script type="text/javascript" src="js/list.js"></script>
+</body>
+</html>

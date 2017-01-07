@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: arial;
+    font-size: 12px;
+}
+
+.nav {
+    position: fixed;
+    width:300px;
+    background:#fff;
+    top: 10px;
+    right: 0;
+}
+
+.nav a {
+    border: 1px solid #a3b4da;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+#downloadFile {
+    color: #a3b4da;
+}
+
+#messageBox {
+    width: 100%;
+    font-size: 9px;
+    color: gray;
+}

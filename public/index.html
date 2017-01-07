@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>静态资源打包压缩工具</title>
+	<link href="css/css.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<div class="nav">
+		<a href="/">上传</a>
+		<a href="/about.html">工具说明</a>
+		<a href="/list.html">已压缩资源</a>
+	</div>
+	<h1>静态资源打包压缩工具(v0.1)</h1>
+	<iframe id="uploadFrame" name="uploadFrame" src="about:blank" style="display:none;"></iframe>
+	<form id="uploadForm" method="post" action="/upload" enctype="multipart/form-data" target="uploadFrame">
+		<input id="clientId" type="hidden" name="clientId"/>
+		<p><input id="uploadFile" type="file" name="upfile"/></p>
+		<p><input type="submit" value="上传"></p>
+	</form>
+	<div id="downloadFile"></div>
+	<div id="messageBox"></div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
